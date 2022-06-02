@@ -1,0 +1,6 @@
+name: bcdp-notebook
+channels:
+  - conda-forge
+dependencies:
+  - bcdp
+  - papermill
