@@ -1,5 +1,0 @@
-workflow_origin_dir: /Users/goodman/data/CORDEX_Africa
-workflow_destination_dir: in
-workflow_variable: pr
-workflow_out_dir: /Users/goodman/projects/unity/out
-workflow_input_dir: /Users/goodman/projects/unity
