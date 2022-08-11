@@ -43,3 +43,6 @@ outputs:
     type: Directory
     outputBinding:
       glob: $(inputs.dataset_path_name)
+stdout: stage_in-stdout.txt
+stderr: stage_in-stderr.txt
+
