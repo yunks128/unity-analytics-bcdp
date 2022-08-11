@@ -1,0 +1,70 @@
+{
+    "processDescription": {
+        "process": {
+            "id": "unity-sds.unity-analytics-bcdp.main",
+            "title": "BCDP",
+            "owsContext": {
+                "offering": {
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/unity-sds/unity-analytics-bcdp/main/workflow.cwl"
+                    }
+                }
+            },
+            "abstract": "Application Package Demo",
+            "keywords": ["Demo"],
+            "inputs": [
+                {
+                    "id": "workflow_variable",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": [
+                                    "string"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "workflow_dataset_path_name",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": [
+                                    "string"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "workflow_base_dataset_url",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": [
+                                    "string"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "outputs": []
+        },
+        "processVersion": "3.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
+    },
+    "immediateDeployment": true,
+    "executionUnit": [{
+        "href": "docker://jplzhan/ci-generated-images:unity-sds.unity-analytics-bcdp.main"
+    }]
+}

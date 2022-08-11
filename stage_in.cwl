@@ -43,9 +43,3 @@ outputs:
     type: Directory
     outputBinding:
       glob: $(inputs.dataset_path_name)
-#  nc_files:
-#    type:
-#      type: array
-#      items: File
-#    outputBinding:
-#      glob: AFRICA*.nc
