@@ -8,6 +8,9 @@ hints:
 requirements:
   NetworkAccess:
     networkAccess: true
+  ResourceRequirement:
+    tmpdirMin: 10000
+    outdirMin: 10000
 
 baseCommand: [sh]
 arguments:
