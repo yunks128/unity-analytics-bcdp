@@ -1,6 +1,11 @@
 cwlVersion: v1.1
 class: Workflow
 
+requirements:
+  ResourceRequirement:
+    tmpdirMin: 10000
+    outdirMin: 10000
+
 inputs:
   workflow_base_dataset_url: string
   workflow_variable: string
