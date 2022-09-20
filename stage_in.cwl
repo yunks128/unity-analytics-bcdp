@@ -15,9 +15,6 @@ arguments:
 - aws s3 cp --recursive $(inputs.base_dataset_url)$(inputs.dataset_path_name) $(inputs.dataset_path_name)
 
 inputs:
-  aws_access_key_id: string
-  aws_secret_access_key: string
-  aws_session_token: string
   base_dataset_url:
     type: string
   dataset_path_name:
