@@ -3,5 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - bcdp
+  - rioxarray
+  - pyproj
   - papermill
   - awscli
