@@ -1,0 +1,225 @@
+{
+    "processDescription": {
+        "process": {
+            "id": "unity-analytics-bcdp.HEAD",
+            "title": "Use correct process.ipynb",
+            "owsContext": {
+                "offering": {
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/jplzhan/artifact-deposit-repo/main/unity-analytics-bcdp/workflow.cwl"
+                    }
+                }
+            },
+            "abstract": "Application Package Demo",
+            "keywords": [
+                "Demo"
+            ],
+            "inputs": [
+                {
+                    "id": "variable_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "experiment_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "table_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "member_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "grid_label",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "activity_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "institution_id",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "backend",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "method",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "res",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "Any"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "freq",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "lat_bnds",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "Any"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "lon_bnds",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "Any"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "time_bnds",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "Any"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "season",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "Any"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "nc_file",
+                    "title": "Automatically detected from .ipynb parsing.",
+                    "output": {
+                        "formats": [
+                            {
+                                "mimeType": "text/*",
+                                "default": true
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "plot_file",
+                    "title": "Automatically detected from .ipynb parsing.",
+                    "output": {
+                        "formats": [
+                            {
+                                "mimeType": "text/*",
+                                "default": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
+    },
+    "immediateDeployment": true,
+    "executionUnit": [
+        {
+            "href": "docker://jplzhan/ci-generated-images:unity-sds.unity-analytics-bcdp.main"
+        }
+    ]
+}
