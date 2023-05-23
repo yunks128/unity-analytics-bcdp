@@ -1,10 +1,8 @@
 #!/usr/bin/env cwl-runner
 baseCommand:
 - papermill
-- /home/jovyan/process.ipynb
+- /Users/goodman/dev/unity-analytics-bcdp/examples/cmip6-intake-esm/process.ipynb
 - output_nb.ipynb
-- -f
-- /tmp/inputs.json
 class: CommandLineTool
 cwlVersion: v1.2
 inputs:
@@ -14,15 +12,15 @@ inputs:
   freq: string
   grid_label: string
   institution_id: string
-  lat_bnds: Any
-  lon_bnds: Any
+  lat_bnds: string
+  lon_bnds: string
   member_id: string
   method: string
   output_directory: string
-  res: Any
-  season: Any
+  res: string
+  season: string
   table_id: string
-  time_bnds: Any
+  time_bnds: string
   variable_id: string
 outputs:
   nc_file:
@@ -42,12 +40,8 @@ outputs:
       glob: '''CMIP_example.png'''
     type: File
 requirements:
-  DockerRequirement:
-    dockerPull: jplzhan/ci-generated-images:unity-sds.unity-analytics-bcdp.main
   InitialWorkDirRequirement:
     listing:
-    - entry: $(inputs)
-      entryname: /tmp/inputs.json
     - entry: '$({class: ''Directory'', listing: []})'
       entryname: $(inputs.output_directory)
       writable: true
