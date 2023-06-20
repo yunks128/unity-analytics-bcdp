@@ -1,0 +1,103 @@
+{
+    "processDescription": {
+        "process": {
+            "id": "unity-analytics-bcdp.58c0285a",
+            "title": "Readd docker req to process.cwl\n",
+            "owsContext": {
+                "offering": {
+                    "content": {
+                        "href": "https://raw.githubusercontent.com/jplzhan/artifact-deposit-repo/main/unity-analytics-bcdp/workflow.cwl"
+                    }
+                }
+            },
+            "abstract": "Application Package Demo",
+            "keywords": [
+                "Demo"
+            ],
+            "inputs": [
+                {
+                    "id": "dataset",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "backend",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "method",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "dlon",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "float"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "dlat",
+                    "title": "Automatically detected using papermill.",
+                    "literalDataDomains": [
+                        {
+                            "dataType": {
+                                "name": "float"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "outputs": [
+                {
+                    "id": "nc_file",
+                    "title": "Automatically detected from .ipynb parsing.",
+                    "output": {
+                        "formats": [
+                            {
+                                "mimeType": "text/*",
+                                "default": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "processVersion": "1.0.0",
+        "jobControlOptions": [
+            "async-execute"
+        ],
+        "outputTransmission": [
+            "reference"
+        ]
+    },
+    "immediateDeployment": true,
+    "executionUnit": [
+        {
+            "href": "docker://unity-analytics-bcdp:58c0285a"
+        }
+    ]
+}
