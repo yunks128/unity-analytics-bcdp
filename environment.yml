@@ -3,6 +3,9 @@ channels:
   - conda-forge
 dependencies:
   - bcdp
+  - s3fs
+  - python=3.8
+  - intake-esm
   - rioxarray
   - pyproj
   - papermill
