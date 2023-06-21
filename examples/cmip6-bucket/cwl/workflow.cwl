@@ -4,15 +4,11 @@ $namespaces:
 class: Workflow
 cwlVersion: v1.2
 inputs:
-  parameters:
-    type:
-      fields:
-        backend: string
-        dataset: string
-        dlat: float
-        dlon: float
-        method: string
-      type: record
+  dataset: string
+  backend: string
+  dlat: float
+  dlon: float
+  method: string
 outputs: {}
 requirements:
   InlineJavascriptRequirement: {}
@@ -23,21 +19,11 @@ requirements:
 steps:
   process:
     in:
-      backend:
-        source: parameters
-        valueFrom: $(self.backend)
-      dataset:
-        source: parameters
-        valueFrom: $(self.dataset)
-      dlat:
-        source: parameters
-        valueFrom: $(self.dlat)
-      dlon:
-        source: parameters
-        valueFrom: $(self.dlon)
-      method:
-        source: parameters
-        valueFrom: $(self.method)
+      dataset: dataset
+      backend: backend
+      dlat: dlat
+      dlon: dlon
+      method: method
     out:
     - process_output_nb
     - nc_file

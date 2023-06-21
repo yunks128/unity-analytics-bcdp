@@ -6,7 +6,7 @@
             "owsContext": {
                 "offering": {
                     "content": {
-                        "href": "https://raw.githubusercontent.com/jplzhan/artifact-deposit-repo/main/unity-analytics-bcdp/workflow.cwl"
+                        "href": "https://raw.githubusercontent.com/unity-sds/unity-analytics-bcdp/main/examples/cmip6-bucket/cwl/workflow.cwl"
                     }
                 }
             },
