@@ -9,7 +9,13 @@ inputs:
   dlat: float
   dlon: float
   method: string
-outputs: {}
+outputs:
+  process_output_nb:
+    type: File
+    outputSource: process/process_output_nb
+  nc_file:
+    type: File
+    outputSource: process/nc_file
 requirements:
   InlineJavascriptRequirement: {}
   NetworkAccess:
